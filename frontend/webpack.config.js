@@ -38,6 +38,11 @@ module.exports = {
             loader: '@teamsupercell/typings-for-css-modules-loader'
           },
         ]
+      },
+      { 
+        test: /\.(png|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {},
       }
     ]
   }

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "typeRoots": ["types", "node_modules/@types"],
     "sourceMap": true,
     // TSはECMAScript 5に変換
     "target": "es5",
