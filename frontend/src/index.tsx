@@ -52,6 +52,9 @@ function App() {
         <meta name="description" content="axxeix" />
         <meta name="author" content="axxeix" />
         <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="axxeix" />
+        <meta name="twitter:description" content="axxeix" />
+        <meta name="twitter:image" content={AppleTouchIcon} />
         <link rel="shortcut icon" href={Favicon}/>
         <link rel="apple-touch-icon" href={AppleTouchIcon}/>
       </Helmet>
