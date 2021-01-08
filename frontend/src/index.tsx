@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     margin: "1em"
+  },
+  footer: {
+    padding: theme.spacing(2)
   }
 }))
 
@@ -33,7 +36,7 @@ const theme = createMuiTheme({
       main: teal[500]
     },
     secondary: {
-      main: '#00bcd4'
+      main: teal[300]
     }
   }
 })
@@ -84,6 +87,11 @@ function App() {
             </Container>
           </div>
         </main>
+        <footer>
+          <Typography align="center" color="secondary" className={classes.footer}>
+            © 2021 axxeix
+          </Typography>
+        </footer>
       </ThemeProvider>
     </>
   )
