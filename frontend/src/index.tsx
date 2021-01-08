@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import AppBar from '@material-ui/core/AppBar'
-import { Container, CssBaseline, Grid, Toolbar, Typography } from '@material-ui/core'
+import { Container, CssBaseline, Grid, Link, List, ListItem, ListItemText, Paper, Toolbar, Typography } from '@material-ui/core'
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles'
 
-import Icon from '../public/images/icon.jpg'
+import Avator from '../public/images/icon.jpg'
 import { teal } from '@material-ui/core/colors'
+
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const useStyles = makeStyles((theme) => ({
   hero: {
@@ -15,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
   image: {
     borderRadius: "50%",
     border: "1px solid black"
+  },
+  icon: {
+    margin: "1em"
   }
 }))
 
@@ -38,7 +43,7 @@ function App() {
         <AppBar position="relative" color="primary">
           <Toolbar>
             <Typography variant="h6" color="inherit" noWrap>
-              axxeix
+              <Link href="/" color="inherit">axxeix</Link>
             </Typography>
           </Toolbar>
         </AppBar>
@@ -46,11 +51,19 @@ function App() {
           <div className={classes.hero}>
             <Container maxWidth="sm">
               <Grid container alignItems="center" justify="center">
-                <img src={Icon} alt="アイコン画像" className={classes.image}></img>
+                <img src={Avator} alt="アイコン画像" className={classes.image}></img>
               </Grid>
               <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                 axxeix
               </Typography>
+              <Paper variant="outlined">
+                <List>
+                  <ListItem>
+                    <TwitterIcon fontSize="small" className={classes.icon} />
+                    <ListItemText primary="Twitter"></ListItemText>
+                  </ListItem>
+                </List>
+              </Paper>
             </Container>
           </div>
         </main>
