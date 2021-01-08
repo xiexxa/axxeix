@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Helmet from 'react-helmet'
 import AppBar from '@material-ui/core/AppBar'
 import { Container, CssBaseline, Grid, Link, List, ListItem, ListItemText, Paper, Toolbar, Typography } from '@material-ui/core'
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles'
@@ -38,6 +39,7 @@ function App() {
   const classes = useStyles()
   return (
     <>
+      <Helmet title="axxeix" />
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <AppBar position="relative" color="primary">
