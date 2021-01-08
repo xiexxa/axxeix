@@ -6,6 +6,8 @@ import { Container, CssBaseline, Grid, Link, List, ListItem, ListItemText, Paper
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles'
 
 import Avator from '../public/images/icon.jpg'
+import Favicon from '../public/images/favicon.jpg'
+import AppleTouchIcon from '../public/images/apple-touch-icon.jpg'
 import { teal } from '@material-ui/core/colors'
 
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -45,7 +47,13 @@ function App() {
   const classes = useStyles()
   return (
     <>
-      <Helmet title="axxeix" />
+      <Helmet>
+        <title>axxeix</title>
+        <meta name="description" content="axxeix" />
+        <meta name="author" content="axxeix" />
+        <link rel="shortcut icon" href={Favicon}/>
+        <link rel="apple-touch-icon" href={AppleTouchIcon}/>
+      </Helmet>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <AppBar position="relative" color="primary">
