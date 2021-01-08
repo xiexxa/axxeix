@@ -9,6 +9,9 @@ import Avator from '../public/images/icon.jpg'
 import { teal } from '@material-ui/core/colors'
 
 import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import AppleIcon from '@material-ui/icons/Apple';
 
 const useStyles = makeStyles((theme) => ({
   hero: {
@@ -62,7 +65,19 @@ function App() {
                 <List>
                   <ListItem>
                     <TwitterIcon fontSize="small" className={classes.icon} />
-                    <ListItemText primary="Twitter"></ListItemText>
+                    <Link href="https://twitter.com/axxeix" target="_blank" rel="noopener">@axxeix</Link>
+                  </ListItem>
+                  <ListItem>
+                    <InstagramIcon fontSize="small" className={classes.icon} />
+                    <Link href="https://www.instagram.com/axxeix/" target="_blank" rel="noopener">axxeix</Link>
+                  </ListItem>
+                  <ListItem>
+                    <FacebookIcon fontSize="small" className={classes.icon} />
+                    <Link href="https://www.facebook.com/profile.php?id=100009399219311" target="_blank" rel="noopener">石川瑛祐</Link>
+                  </ListItem>
+                  <ListItem>
+                    <AppleIcon fontSize="small" className={classes.icon} />
+                    <Link href="https://music.apple.com/jp/playlist/0x07e5/pl.u-dEWjIdkyeD5" target="_blank" rel="noopener">Apple Music</Link>
                   </ListItem>
                 </List>
               </Paper>
